@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html ng-app="game2048">
+<head>
+  <meta charset="utf-8">
+  <title>Xiaodan's Everything</title>
+  <meta name="author" content="Mengdan Zhu  (Daniel Zhu)">
+  <link href="/favicon.png" rel="shortcut icon">
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <!-- <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+<!--   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-32456518-1', 'staydan.com');
+    ga('send', 'pageview');
+
+  </script> -->
+
+  <!-- Third party libraries -->
+  <script src="./libs/jquery/jquery-2.0.3.js"></script>
+  <script src="./libs/ba-debug.js"></script>
+
+  <script src="js/main.js"></script>
+</head>
+<body tabindex="1" >
+  <div class="game">
+    <div class="header-bar">
+      <div class="header-bar-logo">Table Hockey</div>
+      <div class="item-background">Player B<br><span class="item" id="playerBScore"></span></div>
+      <div class="item-background">Player A<br><span class="item" id="playerAScore"></span></div>
+    </div>
+    <div class="play-area">
+      <div class="player-symbol">AB</div>
+      <div class="slider slider-left"></div>
+      <div class="slider slider-right"></div>
+      <div class="ball"></div>
+      <div class="vertical-divider"></div>
+    </div>
+    <div class="game-notice">
+      <div>
+        <span class="game-notice-label">How to play: </span>
+        <span class="game-notice-text">Player A: <code>W</code>, <code>S</code>; Player B: <code>Up</code>, <code>Down</code>. <br>Try to move your slider block to bounce the small ball using the key, who let the ball pass your deadline, you lose. The score in the header bar show the latest winner.</span>
+      </div>
+      <hr>
+      <div>
+        <span class="game-notice-label">Read Me: </span>
+        <span class="game-notice-text">The idea of this game came from the popular 2048 and 1024. Here's the original <a href="http://gabrielecirulli.github.io/2048/" target="_blank">2048 website</a>. I re-created it by HTML5 Canvas because of my great interests. Welcome to send your feedback to me. Thanks.</span>
+      </div>
+      <hr>
+      <div>
+        <span class="game-notice-text">Created by <a href="http://staydan.com" target="_blank">Zhu, Meng-Dan(Daniel)</a>. The source code can be found on <a href="https://github.com/DanielZhu/game-2048" target="_blank">Github</a></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
