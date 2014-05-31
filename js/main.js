@@ -22,7 +22,7 @@ $(function () {
   tableHockey.ballHeight = tableHockey.ballWidth;
   tableHockey.playerLeftScore = 0;
   tableHockey.playerRightScore = 0;
-  tableHockey.gameOver = false;
+  tableHockey.gameOver = true;
   tableHockey.winner = null;
   tableHockey.padding = 5;
 
@@ -40,7 +40,6 @@ $(function () {
   }, false);
 
   $('body').keydown(function (event) {
-
     switch (event.which) {
       case tableHockey.keys.W:
         tableHockey.leftSliderMoveFlag = true;
@@ -59,10 +58,10 @@ $(function () {
         tableHockey.moveRightDirectionY = 1;
         break;
       case tableHockey.keys.SPACE:
+        $('.newer-guide').hide();
         continueRound();
         break;
     }
-    e.preventDefault();
   });
 
   $('body').keyup(function (event) {
@@ -150,6 +149,7 @@ $(function () {
     $('#playerAScore').html(tableHockey.playerLeftScore);
     $('#playerBScore').html(tableHockey.playerRightScore);
     if (tableHockey.gameOver) {
+      $('.newer-guide').show();
       $('.ball').css({'top': (tableHockey.height - tableHockey.ballHeight) / 2 + 'px', 'left': tableHockey.width / 2 + tableHockey.winner * 50});
       clearInterval(loop);
     }

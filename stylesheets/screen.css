@@ -191,6 +191,23 @@ body {
 }
 
 /* line 108, ../al-gra/sass/custom/_custom.scss */
+.newer-guide {
+  width: 350px;
+  height: auto;
+  background-color: red;
+  opacity: 0.7;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 133.33333px;
+  margin-left: 100px;
+  font-size: 35px;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+
+/* line 123, ../al-gra/sass/custom/_custom.scss */
 .vertical-divider {
   position: absolute;
   width: 400px;
@@ -208,25 +225,25 @@ body {
   transform: translateX(300px) rotate(90deg);
 }
 
-/* line 116, ../al-gra/sass/custom/_custom.scss */
+/* line 131, ../al-gra/sass/custom/_custom.scss */
 .game-notice {
   line-height: 35px;
   text-align: left;
   margin-top: 20px;
 }
-/* line 120, ../al-gra/sass/custom/_custom.scss */
+/* line 135, ../al-gra/sass/custom/_custom.scss */
 .game-notice .game-notice-label {
   font-size: 22px;
   color: #575757;
   margin: 0px 10px 0px 0px;
 }
-/* line 125, ../al-gra/sass/custom/_custom.scss */
+/* line 140, ../al-gra/sass/custom/_custom.scss */
 .game-notice .game-notice-text {
   font-size: 18px;
   color: #575757;
 }
 
-/* line 130, ../al-gra/sass/custom/_custom.scss */
+/* line 145, ../al-gra/sass/custom/_custom.scss */
 code {
   padding: 2px 4px;
   font-size: 90%;
